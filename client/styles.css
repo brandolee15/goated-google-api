@@ -12,7 +12,7 @@ body, input, button {
 
 /* Styling the navbar */
 #navbar{
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 6px;
     height: 60px;
     display: flex;
@@ -45,7 +45,7 @@ body, input, button {
 
 #nav-ul-2 li{
     margin-top: 5px;
-    padding-right: 15px;
+    padding-right: 25px;
 }
 
 #nav-ul-2 li a{
@@ -87,3 +87,86 @@ body, input, button {
 #nav-ul-2 li:nth-of-type(4) a:hover{
     filter: brightness(105%);
 }
+
+
+/* Styling Google Logo */
+#google-logo{
+    display: flex;
+    margin: 0 auto;
+    width: 20%;
+}
+
+
+/* Form Styling */
+#search-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#search-container{
+    display: flex;
+    margin: 5px auto;
+    max-width: 584px;
+    width: 30%;
+    
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+}
+
+#search-input-container{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    height: 34px;
+    font-size: 16px;
+
+    align-items: center;
+    height: auto;
+}
+
+#search{
+    display: flex;
+    margin: 0 auto;
+    margin-left: 4%;
+    width: 550px;
+    height: auto;
+    border: none;
+    outline: none;
+}
+
+/* Styling Search Buttons */
+#buttons-container{
+    margin-top: 2%;
+}
+
+.button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 8px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#google-search:hover{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
