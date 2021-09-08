@@ -140,8 +140,9 @@ body, input, button {
     margin-left: 4%;
     width: 550px;
     height: auto;
-    border: none;
-    outline: none;
+    /* border: none;
+    outline: none; */
+    background-color: red;
 }
 
 /* Styling Search Buttons */

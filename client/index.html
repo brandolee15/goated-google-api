@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="/script.js"></script>
     <title>Google</title>
 </head>
 <body>
@@ -26,17 +27,19 @@
 
         <img id="google-logo" src="./assets/google-logo.png" alt="">
 
-        <form id="search-form" action="/search" method="GET" role="search">
+        <form action="" method="" role="">
             <div id="search-container">
                 <div id="search-icon"></div>
-                <div id="search-input-container"><input id="search" type="text"></div>
+                <div id="search-input-container"></div>
                 <div id="mic-icon"></div>
             </div>
-            <div id="buttons-container">
-                <input id="google-search" class="button" type="text" value="Google Search">
+            <div>
+                
                 <input id="feeling-lucky" class="button" type="text" value="I'm Feeling Lucky">
             </div>
-        </form>    
+        </form> 
+        <input id="google-search" class="button" type="submit" value="Google Search">   
+        <input id="search" type="text">
 
  
 </body>
