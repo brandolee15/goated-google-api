@@ -16,7 +16,7 @@ function search(e) {
     const searchedTerm = document.getElementById('search').textContent
     let orderedResults = []
     for (let i=0;i<=10;i++) {
-        if (data.description[i].contains(searchedTerm)) {
+        if (data.description[i].contains(searchedTerm) || data.title[i],contains(searchedTerm)) {
             orderedResults.append(data.description[i])
         }
         else {
