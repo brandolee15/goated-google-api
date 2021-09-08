@@ -6,9 +6,11 @@ const app = express();
 app.use(express.json())
 app.use(cors());
 
+app.use(express.static('../client'))
+
 
 app.get('/', (req, res) => {
-    res.send('Hello there!!!');
+    res.send('index');
 });
 
 app.post('/', (req, res) => {
@@ -17,6 +19,7 @@ app.post('/', (req, res) => {
 
 app.get('/search', (req, res) => {
     res.send(searchResults)
+    //console.log('...')
 })
 
 app.get('/search/:id', (req, res) => {
