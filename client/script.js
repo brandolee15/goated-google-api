@@ -1,6 +1,10 @@
 const searchBtn = document.getElementById('google-search')
 
-searchBtn.addEventListener('click', search)
+//Trigger function on this loaded element
+// let loadElement = document.getElementById('this-loads');
+// loadElement.addEventListener('onload', search());
+
+searchBtn.addEventListener('click', search);
 
 function search(e) {
     try {

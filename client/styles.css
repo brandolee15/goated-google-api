@@ -253,8 +253,8 @@ body, input, button {
 }
 
 .link-container h3:hover{
-    border-bottom: 2px solid #1a0dab;
-    width: 13%;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
     cursor: pointer;
 }
 
