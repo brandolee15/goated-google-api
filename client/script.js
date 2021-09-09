@@ -1,16 +1,12 @@
 const searchBtn = document.getElementById('google-search')
 
-//Trigger function on this loaded element
-// let loadElement = document.getElementById('this-loads');
-// loadElement.addEventListener('onload', search());
-
 searchBtn.addEventListener('click', search);
 
 function search(e) {
     try {
     e.preventDefault();
 
-    //Reset Element 
+    //Reset Links Section for next search 
     let updatedLinkSection = document.getElementById('link-section')
     updatedLinkSection.innerHTML = "";
 
@@ -20,7 +16,6 @@ function search(e) {
     
     console.log(searchArray)
     fetch('http://localhost:3000/search')
-    //console.log(searchBtn)
     .then(resp => resp.json())
     .then(data => {
         for (let k = 0; k < searchArray.length; k++) {
@@ -61,8 +56,6 @@ function search(e) {
 
 
 // Append to our link container each link object with the class for that styling 
-//
-
 
  function orderArray(array) {
     let sortedArray = array.sort((a,b) => b['count'] > a['count'] ? 1 : -1);
