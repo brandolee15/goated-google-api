@@ -1,0 +1,14 @@
+const searchResults = [
+    {id: 1 , link: "https://www.Instagram.com", title: "Instagram" , description: "Create an account or log in to Instagram - A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.", count:0},
+    {id: 2 , link: "https://www.github.com", title: "GitHub: Where the world builds software" , description: "GitHub is where over 65 million developers shape the future of software, together. Contribute to the open source community, manage your Git repositories", count:0},
+    {id: 3 , link: "https://www.en-gb.facebook.com", title: "Facebook – log in or sign up" , description: "Create an account or log in to Facebook. Connect with friends, family and other people you know. Share photos and videos, send messages and get updates.", count:0},
+    {id: 4 , link: "https://www.Twitter.com", title: "See what's happening in the world right now - Twitter" , description: "Join Twitter today. Sign up Log In. Follow your interests. Hear what people are talking about. Join the conversation.", count:0},
+    {id: 5 , link: "https://www.w3schools.com", title: "W3Schools Online Web Tutorials" , description: "W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references", count:0},
+    {id: 6 , link: "https://www.webmd.com", title: "WebMD - Better information. Better health." , description: "The leading source for trustworthy and timely health and medical news and information. Providing credible health information, supportive community", count:0},
+    {id: 7 , link: "https://www.nike.com", title: "Nike. Just Do It. Nike GB" , description: "Inspiring the world's athletes, Nike delivers innovative products, experiences and services", count:0},
+    {id: 8 , link: "https://www.Amazon.co.uk", title: "Amazon.co.uk: Low Prices in Electronics, Books, Sports" , description: "Sign up to Amazon Prime for unlimited free delivery. Low prices at Amazon on digital cameras, MP3, sports, books, music, DVDs, video games, home & garden", count:0},
+    {id: 9 , link: "https://www.Netflix.co.uk", title: "Netflix - Watch TV Shows Online, Watch Movies Online" , description: "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of", count: 0},
+    {id: 10 , link: "https://en.wikipedia.org", title: "Wikipedia, the free encyclopedia" , description: "'Can't Get You Out of My Head' is a song recorded by Australian singer Kylie Minogue (pictured) for Fever, her eighth studio album.", count: 0}
+]
+
+module.exports = searchResults
