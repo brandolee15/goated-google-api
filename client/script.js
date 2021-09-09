@@ -7,7 +7,6 @@ function search(e) {
     e.preventDefault();
     const searchedTerm = document.getElementById('search').value;
     let searchArray = searchedTerm.split(' ');
-    
     console.log(searchedTerm)
     
     console.log(searchArray)
@@ -17,32 +16,43 @@ function search(e) {
     .then(data => {
         for (let k = 0; k < searchArray.length; k++) {
             sortResults(data, searchArray[k])
-        }
+        } 
+        return data
     })
+    .then(orderArray)
     
-    // .then(console.log(data[1]))
     } catch (error) {
         console.log(error);
     }
   }
 
-  function sortResults(data,searchArray) {
-    //console.log(typeOf(searchArray[0]))
+  function sortResults(data,word) {
     let resData = data;
-    console.log(searchArray);
+    console.log(word)
+    if (word[0]) {
+
     for (let i = 0; i <= 9; i++) {
-        console.log('it went through')
-        let str = resData[i]["description"];
-        let str2 = resData[i]["title"];
-        if (str.includes(searchArray) || str2.includes(searchArray)) {
+
+        let str = resData[i]["description"].toLowerCase();
+        let str2 = resData[i]["title"].toLowerCase();
+
+        if (str.includes(word.toLowerCase())) {
             console.log('butter'); 
                 resData[i].count++;
             }
+        if (str2.includes(word.toLowerCase())) {
+            resData[i].count++
+        }
         else {
             continue;
-        }
+        }   
+    }  
     }
-    console.log(resData[0]);
-  }
+}
 
+ function orderArray(array) {
+    let sortedArray = array.sort((a,b) => b['count'] > a['count'] ? 1 : -1);
+    console.log(sortedArray)
+    return sortedArray
+}
   
