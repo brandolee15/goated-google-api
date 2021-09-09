@@ -31,4 +31,8 @@ app.get('/search/:id', (req, res) => {
     }
 })
 
+app.get('/linkspage', (req, res) => {
+    res.send('linkPage')
+})
+
 module.exports = app;

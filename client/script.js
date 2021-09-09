@@ -82,3 +82,9 @@ function search(e) {
     // return sortedArray
 }
   
+
+module.exports = {
+    search,
+    sortResults,
+    orderArray
+}
