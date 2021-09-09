@@ -5,6 +5,11 @@ searchBtn.addEventListener('click', search)
 function search(e) {
     try {
     e.preventDefault();
+
+    //Reset Element 
+    let updatedLinkSection = document.getElementById('link-section')
+    updatedLinkSection.innerHTML = "";
+
     const searchedTerm = document.getElementById('search').value;
     let searchArray = searchedTerm.split(' ');
     console.log(searchedTerm)
@@ -50,9 +55,26 @@ function search(e) {
     }
 }
 
+
+// Append to our link container each link object with the class for that styling 
+//
+
+
  function orderArray(array) {
     let sortedArray = array.sort((a,b) => b['count'] > a['count'] ? 1 : -1);
     console.log(sortedArray)
-    return sortedArray
+    let linkSection = document.getElementById('link-section');
+    for(let j = 0; j <= sortedArray.length - 1; j++){
+        let linkDiv = `<div class="link-container">
+        <a href="">${sortedArray[j]['link']}</a>
+        <br>
+        <h3>${sortedArray[j]['title']}</h3>
+        <div>${sortedArray[j]['description']}</div>
+        </div><br>`
+        console.log(linkDiv);
+        linkSection.insertAdjacentHTML('beforeend', linkDiv);
+        linkDiv = '';
+    }
+    // return sortedArray
 }
   

@@ -249,6 +249,7 @@ body, input, button {
     width: 13%;
     margin-bottom: 6px;
     color: #1a0dab;
+    white-space: nowrap;
 }
 
 .link-container h3:hover{
